@@ -63,7 +63,7 @@ const User = () => {
           headerName: 'Body',
           description: 'This column has a value getter and is not sortable.',
           sortable: false,
-          width: 400,
+          width: 300,
           editable: true,
         },
       ];
@@ -80,8 +80,8 @@ const User = () => {
         <div>
           {error && <p>{error}</p>}
           {loading && <p>Loading...</p>}
-          <Container sx={{marginTop:10}}>
-            <Box sx={{ height: 400, width: '100%'}}>
+          <Container sx={{marginTop:5}}>
+            <Box sx={{ height: 500, width: '100%'}}>
               <DataGrid
                 rows={rows}
                 columns={columns}

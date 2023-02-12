@@ -1,7 +1,8 @@
-import { Route, Routes } from 'react-router-dom';
-import InputField from './components/InputField';
-import User from './components/User';
-import toast, { Toaster } from 'react-hot-toast';
+import { RouterProvider } from 'react-router-dom';
+
+
+import { Toaster } from 'react-hot-toast';
+import { router } from './Routes/route';
 
 
 function App() {
@@ -9,10 +10,7 @@ function App() {
 
   return (
     <>
-    <Routes>
-      <Route path='/' element={<InputField/>}/>
-      <Route path='/user' element={<User/>}/>
-    </Routes> 
+   <RouterProvider router={router}/> 
     <Toaster /> 
     </>
   )

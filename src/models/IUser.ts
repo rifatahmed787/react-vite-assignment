@@ -4,4 +4,7 @@ export interface IUsers {
     title: string;
     body: string;
   }
-  
+
+export interface Props {
+  window?: () => Window;
+}
